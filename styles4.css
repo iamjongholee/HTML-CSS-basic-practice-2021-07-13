@@ -1,0 +1,76 @@
+body {
+  background-color: #6bbcbe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.division {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 150px;
+}
+
+.circle {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 10px;
+  animation: circle 1s ease-in-out infinite;
+}
+.division:nth-child(1) {
+  animation: division 2s ease-in-out infinite;
+}
+@keyframes division {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rectangle {
+  background-color: white;
+  width: 10px;
+  height: 50px;
+  margin: 3px;
+  animation: rectangle 1s ease-in-out infinite;
+}
+.rectangle:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.rectangle:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.rectangle:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.rectangle:nth-child(5) {
+  animation-delay: 0.4s;
+}
+@keyframes rectangle {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  75% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
